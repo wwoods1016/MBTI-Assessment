@@ -1,0 +1,70 @@
+.card-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.demo-card-wide.mdl-card {
+  width: 800px;
+  max-width: 80%;
+  max-height: 75%;
+  align-self: center;
+  box-shadow: 10px 10px 5px #111;
+  border-radius: 2px;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 400px;
+  background:    
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../images/card.jpg)  center / cover ;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+.mdl-card__title-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+}
+.mdl-card__supporting-text, .mdl-button {
+  
+font-family: 'Raleway', sans-serif;
+}
+
+.mdl-button-centered {
+      display: flex;
+  justify-content: center;
+}
+
+.mdl-button {
+  font-size: 1.5em;
+}
+
+.demo-layout-transparent {
+  background: url('../images/background.png') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  color: white;
+}
+.mdl-layout-title {
+  font-family: 'Playfair Display', serif;
+  
+}
+
+.mdl-navigation {
+  font-family: 'Raleway', sans-serif;
+}
+
+.info-and-copyright {
+  text-align: center;
+  font-size: .8em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+   font-family: 'Raleway', sans-serif;
+}

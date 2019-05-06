@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS Reset -->
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <!-- Material Design Lite -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-amber.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- Material Design Lite Select -->
+<link rel="stylesheet" href="../../node_modules/getmdl-select/getmdl-select.min.css">
+<script defer src="../../node_modules/getmdl-select/getmdl-select.min.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Local CSS -->
+
+    <link rel="stylesheet" type="text/css" href="css/survey.css">
+    <title>MBTI Assessment</title>
+</head>
+<body>
+
+    <!-- Transparent header that draws on top of the layout's background -->
+<style>
+
+
+</style>
+
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <div class="mdl-layout-spacer"></div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">MBTI Assessment</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" target="_blank" href="home.html">Home</a>
+      <a class="mdl-navigation__link" target="_blank" href="https://en.wikipedia.org/wiki/Myers–Briggs_Type_Indicator">Learn about MBTI</a>
+      <!-- <a class="mdl-navigation__link" href="api/types">API List</a> -->
+      <a class="mdl-navigation__link" target="_blank" href="https://github.com/wwoods1016/FriendFinder">Github Repo</a>
+      <a class="mdl-navigation__link" target="_blank" href="https://wwoods1016.github.io/">Portfolio</a>
+    </nav>
+    <p class="info-and-copyright">&copy; 2019 Will Woods</p>
+  </div>
+  <main class="mdl-layout__content">
+    
+  </main>
+  
+</div>
+
+
+<div class="card-wrapper">
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp ">
+
+      <div class="import-materialize">
+
+        <main>
+          <div class="container">
+            <div class="row">
+              <div class="col s12 z-depth-5 mainpanel">
+                <div id="mainpanel-content">
+                  <h1 class="playfair">MBTI Assessment</h1>
+                  <div class="divider"></div>
+
+<!-- TODO!!!
+
+    Need to incorporate Name and Image entry.
+
+-->
+                  
+                  <!-- <div class="input-field col s6">
+                    <h5>Name <span class="red">*</span></h5>
+                    
+                    <form action="#">
+  <div class="mdl-textfield mdl-js-textfield">
+    <input class="mdl-textfield__input" type="text" id="formName">
+    <label class="mdl-textfield__label" for="sample1">Name</label>
+  </div>
+</form>
+                  </div>
+                  
+                  <div class="input-field col s6">
+                    <h5>Link to Photo Image <span class="red">*</span></h5>
+                    
+                    <form action="#">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" id="formImage">
+    <label class="mdl-textfield__label" for="sample4">URL</label>
+    <span class="mdl-textfield__error">Invalid Input</span>
+  </div>
+</form>
+                  </div> -->
+                  <hr>
+                  
+            <!-- Survey Questions -->
+            <div class ="survey-question-list">
+
+              <div class="input-field col s12">
+                <br>
+              <h5>You enjoy vibrant social events with lots of people.</h5>
+              
+              
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+        <input type="text" value="" class="mdl-textfield__input" id="question1" readonly>
+        <input type="hidden" value="" name="sample4">
+        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+        <label for="sample4" class="mdl-textfield__label">Answer</label>
+        <ul for="sample4" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+          <li class="mdl-menu__item" val="1">1 (Strongly Disagree)</li>
+            <li class="mdl-menu__item" val="2">2</li>
+            <li class="mdl-menu__item" val="3">3</li>
+            <li class="mdl-menu__item" val="4">4</li>
+            <li class="mdl-menu__item" val="3">5 (Strongly Agree) </li>
+        </ul>
+      </div>
+						</div>
+            
+    
+
+						<div class="input-field col s12">
+							
+              <h5>You often spend time exploring unrealistic yet intriguing ideas.</h5>
+				    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+              <input type="text" value="" class="mdl-textfield__input" id="question2" readonly>
+        <input type="hidden" value="" name="sample4">
+        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+        <label for="sample4" class="mdl-textfield__label">Answer</label>
+        <ul for="sample4" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+            <li class="mdl-menu__item" val="1">1 (Strongly Disagree)</li>
+            <li class="mdl-menu__item" val="2">2</li>
+            <li class="mdl-menu__item" val="3">3</li>
+            <li class="mdl-menu__item" val="4">4</li>
+            <li class="mdl-menu__item" val="3">5 (Strongly Agree) </li>
+        </ul>
+    </div>
+						</div>
+            
+						<div class="input-field col s12">
+							<h5>Your travel plans are more likely to look like a rough list of ideas than a detailed itinerary.</h5>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+      <input type="text" value="" class="mdl-textfield__input" id="question3" readonly>
+        <input type="hidden" value="" name="sample4">
+        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+        <label for="sample4" class="mdl-textfield__label">Answer</label>
+        <ul for="sample4" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+            <li class="mdl-menu__item" val="1">1 (Strongly Disagree)</li>
+            <li class="mdl-menu__item" val="2">2</li>
+            <li class="mdl-menu__item" val="3">3</li>
+            <li class="mdl-menu__item" val="4">4</li>
+            <li class="mdl-menu__item" val="3">5 (Strongly Agree) </li>
+          </ul>
+    </div>
+  </div>
+            
+  <div class="input-field col s12">
+    
+    <h5>You often think about what you should have said in a conversation long after it has taken place.</h5>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+      <input type="text" value="" class="mdl-textfield__input" id="question4" readonly>
+        <input type="hidden" value="" name="sample4">
+        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+        <label for="sample4" class="mdl-textfield__label">Answer</label>
+        <ul for="sample4" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+          <li class="mdl-menu__item" val="1">1 (Strongly Disagree)</li>
+            <li class="mdl-menu__item" val="2">2</li>
+            <li class="mdl-menu__item" val="3">3</li>
+            <li class="mdl-menu__item" val="4">4</li>
+            <li class="mdl-menu__item" val="3">5 (Strongly Agree) </li>
+        </ul>
+    </div>
+            </div>
+            
+            	<div class="input-field col s12">
+                
+                <h5>If your friend is sad about something, your first instinct is to support them emotionally, not try to solve their problem.</h5>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                  <input type="text" value="" class="mdl-textfield__input" id="question5" readonly>
+        <input type="hidden" value="" name="sample4">
+        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+        <label for="sample4" class="mdl-textfield__label">Answer</label>
+        <ul for="sample4" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+          <li class="mdl-menu__item" val="1">1 (Strongly Disagree)</li>
+          <li class="mdl-menu__item" val="2">2</li>
+          <li class="mdl-menu__item" val="3">3</li>
+          <li class="mdl-menu__item" val="4">4</li>
+          <li class="mdl-menu__item" val="3">5 (Strongly Agree) </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="input-field col s12">
+      
+							<h5>People can rarely upset you.</h5>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                <input type="text" value="" class="mdl-textfield__input" id="question6" readonly>
+        <input type="hidden" value="" name="sample4">
+        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+        <label for="sample4" class="mdl-textfield__label">Answer</label>
+        <ul for="sample4" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+            <li class="mdl-menu__item" val="1">1 (Strongly Disagree)</li>
+            <li class="mdl-menu__item" val="2">2</li>
+            <li class="mdl-menu__item" val="3">3</li>
+            <li class="mdl-menu__item" val="4">4</li>
+            <li class="mdl-menu__item" val="3">5 (Strongly Agree) </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="input-field col s12">
+							
+        <h5>You often rely on other people to be the ones to start a conversation and keep it going.</h5>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+        <input type="text" value="" class="mdl-textfield__input" id="question7" readonly>
+        <input type="hidden" value="" name="sample4">
+        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+        <label for="sample4" class="mdl-textfield__label">Answer</label>
+        <ul for="sample4" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+            <li class="mdl-menu__item" val="1">1 (Strongly Disagree)</li>
+            <li class="mdl-menu__item" val="2">2</li>
+            <li class="mdl-menu__item" val="3">3</li>
+            <li class="mdl-menu__item" val="4">4</li>
+            <li class="mdl-menu__item" val="3">5 (Strongly Agree) </li>
+          </ul>
+        </div>
+            </div>
+            
+            <div class="input-field col s12">
+              
+							<h5>If you have to temporarily put your plans on hold, you make sure it is your top priority to get back on track as soon as possible.</h5>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                <input type="text" value="" class="mdl-textfield__input" id="question8" readonly>
+                <input type="hidden" value="" name="sample4">
+                <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                <label for="sample4" class="mdl-textfield__label">Answer</label>
+                <ul for="sample4" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                  <li class="mdl-menu__item" val="1">1 (Strongly Disagree)</li>
+                  <li class="mdl-menu__item" val="2">2</li>
+                  <li class="mdl-menu__item" val="3">3</li>
+                  <li class="mdl-menu__item" val="4">4</li>
+                  <li class="mdl-menu__item" val="3">5 (Strongly Agree) </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="input-field col s12">
+              
+              <h5>You rarely worry if you made a good impression on someone you met.</h5>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+                <input type="text" value="" class="mdl-textfield__input" id="question9" readonly>
+                <input type="hidden" value="" name="sample4">
+                <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                <label for="sample4" class="mdl-textfield__label">Answer</label>
+                <ul for="sample4" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                  <li class="mdl-menu__item" val="1">1 (Strongly Disagree)</li>
+                  <li class="mdl-menu__item" val="2">2</li>
+                  <li class="mdl-menu__item" val="3">3</li>
+                  <li class="mdl-menu__item" val="4">4</li>
+                  <li class="mdl-menu__item" val="3">5 (Strongly Agree) </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="input-field col s12">
+              
+              <h5>It would be a challenge for you to spend the whole weekend all by yourself without feeling bored.</h5>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+        <input type="text" value="" class="mdl-textfield__input" id="question10" readonly>
+        <input type="hidden" value="" name="sample4">
+        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+        <label for="sample4" class="mdl-textfield__label">Answer</label>
+        <ul for="sample4" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+          <li class="mdl-menu__item" val="1">1 (Strongly Disagree)</li>
+          <li class="mdl-menu__item" val="2">2</li>
+          <li class="mdl-menu__item" val="3">3</li>
+          <li class="mdl-menu__item" val="4">4</li>
+          <li class="mdl-menu__item" val="3">5 (Strongly Agree) </li>
+        </ul>
+      </div>
+    </div>
+            
+    
+    
+    <!-- Survey Submit Button -->
+    <div class="mdl-button-centered">
+      <a id="submitButton" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+        SUBMIT
+      </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+	</main>
+  
+</div>
+</div>
+</div>
+
+<!-- Modal -->
+<div id="resultsModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>You are an 
+
+      <!-- Prototype Answer, still working on logic :/ -->
+        ESTJ, The Supervisor!
+        <br><br>
+        <h5 id="demoParagraph">ESTJs are organized, honest, dedicated, dignified, traditional, and are great believers of doing what they believe is right and socially acceptable. Though the paths towards “good” and “right” are difficult, they are glad to take their place as the leaders of the pack. They are the epitome of good citizenry. People look to ESTJs for guidance and counsel, and ESTJs are always happy that they are approached for help.</h5>
+
+
+
+    </h3><h4 id="results"></h4>
+    <img id="matchImg" src=""  style="max-width: 350px;">
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+const modal = document.getElementById('resultsModal');
+
+// Get the button that opens the modal
+const btn = document.getElementById("submitButton");
+
+// Get the <span> element that closes the modal
+const span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// JavaScript for Submission Logic
+
+// Gather user inputs
+	// 		let userInput = {
+	// 			name: $('#formName').val().trim(),
+	// 			photo: $('#formImage').val().trim(),
+	// 			scores:[
+	// 				$('#question1').val().trim(),
+	// 				$('#question2').val().trim(),
+	// 				$('#question3').val().trim(),
+	// 				$('#question4').val().trim(),
+	// 				$('#question5').val().trim(),
+	// 				$('#question6').val().trim(),
+	// 				$('#question7').val().trim(),
+	// 				$('#question8').val().trim(),
+	// 				$('#question9').val().trim(),
+	// 				$('#question10').val().trim()
+	// 			]
+  //     };
+      
+  // // Jquery to modal IDs
+
+  // $('#submitButton').click(function () {
+	// // After clicking submit, add up the totals from answers
+	// // For each group, find the value that is active
+
+  // let total = 0;
+  // }
+
+</script>
+
+</body>
+</html>
